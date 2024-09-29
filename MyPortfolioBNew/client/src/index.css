@@ -1,0 +1,212 @@
+:root {
+  --primary-color: #f4a261; /* Warm orange */
+  --secondary-color: #264653; /* Dark blue-green for contrast */
+  --tertiary-color: #E8EAFB; /* Light cream for text and borders */
+  --fourth-color: #BDC2F3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif; /* A more readable sans-serif font */
+  color: var(--secondary-color);
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  background-color: var(--primary-color);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav li {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.nav li a {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.nav li:hover {
+  background-color: var(--tertiary-color);
+}
+
+.logo span {
+  font-size: 30px;
+  font-weight: 600;
+  margin-left: 30px;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  background-color: var(--primary-color);
+}
+
+.first-section {
+  grid-column: 2/3;
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+  padding: 20px;
+}
+
+.image {
+  border: 3px solid var(--tertiary-color);
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--fourth-color);
+}
+
+.welcome-image {
+  width: 70%;
+}
+
+.welcome-con {
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome {
+  border: 3px solid var(--secondary-color);
+  padding: 50px;
+  background-color: var(--tertiary-color);
+}
+
+.second-section {
+  grid-column: 1/4;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 15% 80%;
+  background-color: var(--fourth-color);
+}
+
+.projects-title h2 {
+  font-size: 50px;
+  padding: 5px;
+  border: 3px solid var(--secondary-color);
+}
+
+.projects {
+  grid-column: 2/3;
+  display: grid;
+  row-gap: 5px;
+}
+
+.project-section-1 {
+  display: grid;
+  grid-template-columns: 30% 40% 30%;
+  column-gap: 2.5px;
+}
+
+.project {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project span {
+  padding: 25px;
+  font-size: 25px;
+  border: 3px solid var(--tertiary-color);
+  text-align: center;
+}
+
+.project span a {
+  color: var(--tertiary-color);
+}
+
+.project span:hover {
+  background-color: var(--secondary-color);
+  color: var(--tertiary-color);
+}
+
+:root {
+  --primary-color: #f8f8f8; /* Warm orange */
+  --secondary-color: #264653; /* Dark blue-green for contrast */
+  --tertiary-color: #E8EAFB; /* Light cream for text and borders */
+  --fourth-color: #BDC2F3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "IBM Plex Sans", sans-serif; /* A more readable sans-serif font */
+  color: var(--secondary-color);
+  box-sizing: border-box;
+}
+
+.educationSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--primary-color); /* Warm background color */
+}
+
+.educationContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* Adds space between each education item */
+}
+
+.educationItem {
+  background-color: var(--tertiary-color); /* Light cream background for education items */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  width: 80%;
+  max-width: 600px; /* Max width for larger screens */
+  text-align: center;
+  border: 3px solid var(--secondary-color); /* Border matches secondary color */
+}
+
+.educationText h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: var(--secondary-color); /* Dark blue-green for contrast */
+}
+
+.educationText p {
+  font-size: 1.2rem;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 768px) {
+  .educationItem {
+    width: 90%; /* Makes items more responsive on smaller screens */
+  }
+
+  .educationText h2 {
+    font-size: 1.5rem;
+  }
+
+  .educationText p {
+    font-size: 1rem;
+  }
+}
